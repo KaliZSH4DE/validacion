@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h2>Sanitizador de HTML</h2>
+    <h2>Ingresar texto</h2>
     <textarea id="inputHtml" rows="5" cols="50">
         <h1>Hola</h1>
         <script>alert('Hackeado!');</script>
@@ -16,9 +16,7 @@
         <p>Esto es seguro.</p>
     </textarea>
     <br>
-    <button onclick="sanitizarHtml()">Sanitizar HTML</button>
-    <h3>Resultado:</h3>
-    <div id="outputHtml"></div>
+    <button onclick="verificarHtml()">VERIFICAR</button>
     
     <script src="validar.js"></script>
 </body>
