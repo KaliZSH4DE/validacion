@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitizador de HTML</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h2>Sanitizador de HTML</h2>
+    <textarea id="inputHtml" rows="5" cols="50">
+        <h1>Hola</h1>
+        <script>alert('Hackeado!');</script>
+        <style>body { background-color: red; }</style>
+        <p>Esto es seguro.</p>
+    </textarea>
+    <br>
+    <button onclick="sanitizarHtml()">Sanitizar HTML</button>
+    <h3>Resultado:</h3>
+    <div id="outputHtml"></div>
+    
+    <script src="validar.js"></script>
+</body>
+</html>
